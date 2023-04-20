@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 1fr repeat(4, 225px);
+
+    grid-template-areas:
+        "header"
+        "text"
+        "blue"
+        "turquoise"
+        "green"
+        "yellow"
+}
+
+.header {
+    grid-area: header;
+    background-color: lightgray;
+}
+
+.text {
+    grid-area: text;
+    margin: 70px 35px;
+    box-sizing: border-box;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: blue;
+}
+
+.turquoise {
+    grid-area: turquoise;
+    background-color: turquoise
+}
+
+.green {
+    grid-area: green;
+    background-color: green;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+}

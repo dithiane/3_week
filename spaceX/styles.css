@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+}
+
+.header {
+    grid-area: header;
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    padding-left: 200px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    padding: 0 0 10px;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: -100px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.menu li {
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    height: 100px;
+
+    top: -100px;
+    position: relative;
+}
+
+.cont1{
+    background: no-repeat url("https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_CAROUSEL_DESKTOP_Sunset_Full_Stack_031522_DJI_0066_544ff6b208.jpg");
+}
+
+.cont2{
+    background: no-repeat url("https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_cac54ee8bd.jpg");
+
+}
+
+.cont3{
+    background: no-repeat url("https://sxcontent9668.azureedge.us/cms-assets/assets/HOMEPAGE_CRS_27_Desktop_fcc63e2c6c.png");
+}
+
+.cont4{
+    background: no-repeat url("https://sxcontent9668.azureedge.us/cms-assets/assets/Trans_7_OS_56_0469_Desktop_e7dc1ccff2.jpg");
+}
+
+.cont5{
+    background: no-repeat url("https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Desktop_5ebdeb0c6c.webp");
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 200px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+.feature {
+    margin-top: 200px;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature a {
+    padding: 20px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    max-width: 130px;
+    text-align: center;
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
