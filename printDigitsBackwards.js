@@ -26,7 +26,7 @@ printDigits(12)
 // 1 */
 
 const printDigits = (num) => {
-    let currentNum = Math.abs(num)
+    let currentNum = num
 
     while (currentNum > 0) {
         console.log(`${num} : ${currentNum % 10}`)
@@ -38,4 +38,3 @@ const printDigits = (num) => {
 printDigits(1)
 printDigits(234)
 printDigits(12)
-printDigits(-234)
