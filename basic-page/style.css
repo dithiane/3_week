@@ -1,0 +1,188 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: paleturquoise;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo_icon {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo_icon p {
+    white-space: nowrap;
+    margin: 0;
+}
+
+.logo_icon img {
+    padding-right: 10px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    margin-top: 12px;
+    padding: 20px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul {
+    display: flex;
+    white-space: nowrap;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin: 5px;
+    box-shadow: 5px 5px 5px #3bbcf5;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+ul li:hover {
+    color: darkmagenta
+}
+
+ul li:active {
+    color: darkorchid
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    text-align: justify;
+    margin-top: 25px;
+    padding: 70px;
+
+    font-size: 12px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background: paleturquoise;
+    padding: 20px;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    float: left;
+    padding-right: 25px;
+}
+
+@media (max-width: 1085px) {
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 0 60px;
+        padding: 0 30px;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    figure img {
+        width: 100%
+    }
+
+}
+
+@media (min-width: 780px) {
+    ul {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 780px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo_icon {
+        justify-content: center;
+        padding: 15px 0 0;
+    }
+
+    .login {
+        justify-content: center;
+        margin: 0;
+        padding: 0 0 10px;
+    }
+
+    menu {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    article {
+        margin-top: 150px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        display: inline;
+        margin: 2px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+}
